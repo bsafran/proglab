@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fc4e8f6-183c-43b4-9d3b-bca948311512" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Hafta_03/180401038_Ders_05.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ListandHash.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SortingCodes/insertionSort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SortingCodes/shellSort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week2maxSum.py" beforeDir="false" />
-    </list>
+    <list default="true" id="7fc4e8f6-183c-43b4-9d3b-bca948311512" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +21,7 @@
   <component name="ProjectId" id="1ZJsxm0iYumKUeyjpCkIJXi7NgX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ListandHash.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Odev" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -59,7 +53,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

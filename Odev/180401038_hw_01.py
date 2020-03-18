@@ -5,11 +5,12 @@ output_list = []
 len_all_list = 0
 output = "180401038_hw_1_output.txt"
 
-def get_output(input_list):
+
+def get_output(l,input_list):
     output = open(os.getcwd() + "\\180401038_hw_1_output.txt", "a", encoding="utf-8")
 
-    output.write("\n----------------------------- \n")
-    output.write("-->" + input_list)
+    output.write("\n")
+    output.write(l+"---->"+input_list)
 
 def get_hist(list,search):
     my_hist = {}
@@ -55,23 +56,30 @@ txt_list=os.listdir(os.getcwd()+"\\data_files")
 for txt in txt_list:
     all_list.extend(get_words2(os.getcwd()+"\\data_files\\"+txt))
 
-text = open(os.getcwd() + "\\180401038_hw_1_output.txt", "r+", encoding="utf-8")
+text = open(os.getcwd() + "\\input.txt", "r+", encoding="utf-8")
 contents = text.readlines()
 for line in contents:
     text_list = []
     words = line.split(" ")
+
     for word in words:
         text_list.append(word)
+
     if(len(text_list) <= 5):
         for w in range(len(text_list)):
             text_list[w] = re.sub('\n', '', text_list[w])
+
         else:
             output_list = get_hist(all_list, text_list)
-            max_key = max(output_list)
-            get_output(max_key)
+
+            if output_list:
+
+                max_key = max(output_list)
+                get_output(line,max_key)
+            else:
+                get_output(line,"Hata.Girdiğiniz kelime data'da yok.")
+
+
     else:
-        get_output("Hata. En fazla 5 kelime girebilirsiniz.")
+        get_output(line,"Hata. En fazla 5 kelime girebilirsiniz.")
 text.close()
-
-
-
