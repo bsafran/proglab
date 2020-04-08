@@ -55,14 +55,10 @@ with open(path,'r',encoding="utf-8") as file:
         else:
             history_dict[history_list[item][1]] = 1
 
-    control = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12']
-    for j in control:
-        if not j in history_dict.keys():
-            history_dict[j] = 0
+
 
 value_list = [(k) for k in history_dict.values()]
 value_list = my_sort(value_list)
-print(value_list)
 median = my_median(value_list)
 mean = my_mean(value_list)
 output = ["Medyan : ",str(median),"Ortalama : ", str(mean)]
