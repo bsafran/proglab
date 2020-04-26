@@ -1,6 +1,7 @@
 """
 @author : Berat Safran
 Numara : 180401038
+Github Linki --> https://github.com/bsafran/proglab/tree/master/Odev/odev_3
 180401038 % 4 Değerinin Sonucu = 2
 Kullanılan olasılık : 2. Poisson Distribution
 """
