@@ -1,9 +1,13 @@
-def removeItemFrom(myheap_1): # heap'ten eleman siler.
+def removeItemFrom(myheap_1): # minHeap olduğu için minimum olan elemanı siler. Yani ilk eleman.
     index = len(myheap_1)
     if index<=0:
         print("Heap is NULL")
         return
-    myheap_1.pop()
+    else:
+        myheap_1_copy = myheap_1.copy()
+        myheap_1_copy.pop(0)
+        return heapsort(myheap_1_copy)
+
 def insertItemToHeap(my_heap,item): # heap içerisine eleman ekler.
     my_heap.append(item)
     index = len(my_heap)-1
